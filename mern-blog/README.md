@@ -110,3 +110,23 @@
         - import dan panggil Gap beserta height={20}/ height={50}
     4. pengujian pada browser:
         - http://localhost:5000/register
+
+## Components Link
+
+    berfungsi untuk menambahkan  tulisan yang bisa di klik
+    Todo:
+    1.  components/atoms/Link/index.js
+        - functional components Link
+        - pasang props {title, onClick}
+        - className='link'
+    2.  components/atoms/Link/link.scss
+        - styling link
+    3.  components/atoms/index.js
+        - import dan export Link
+    4.  pages/Register/index.js
+        - import dan pasang link
+        - pasang Gap
+    5.  pages/Register/register.scss
+        - styling register agar form berda ditengah atas & bawah
+    6. pengujian pada browser:
+        - http://localhost:5000/register

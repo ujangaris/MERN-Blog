@@ -19,6 +19,10 @@
   background-color: #fff;
   height: 100%;
   padding: 30px;
+  // agar berada ditengah
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .title {
     font-size: 20px;
     font-weight: bold;
