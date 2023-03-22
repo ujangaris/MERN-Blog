@@ -50,3 +50,33 @@
         -   http://localhost:3000/
         -   http://localhost:3000/login
         -   http://localhost:3000/register
+
+## Design Register & Input component
+
+    Todo:
+    1.  pages/Register/index
+        - buat clasname left & right
+    2.  pages/Register/register.scss
+        - styling
+    3.  install node-sass
+        - cd mern-blog : npm add node-sass
+        - ini di install agar tidak terjadi erroro, karna react hanya membaca file css
+        - kemudian agar tidak error matikan dan jalankan ulang react appnya: npm start
+    4.  assets/image
+        - simpan  buah gambar dari unsplash
+        - buat index.js yang isinya import & export dari path image yang sudah kita simpan
+          ,tujuannya agar dapat dipanggil dengan mudah nantinya
+    5.  components/atoms/Input/index.js
+        - buat functional component input
+        - buat input form
+        - panggilde ngan props : label & rest, rest artinya semua selain label
+    6.  components/atoms/Input/index.scss
+        - style input-wrapper, label & input form
+    7.  components/atoms/index.js
+        - import & export Input
+    8.  components/index.js
+        - export semua file yang berada di atoms file
+    9.  pages/Register/index
+        - import dan panggil registerBg, Input components & register.scss
+    10. pengujian pada browser:
+        - http://localhost:5000/register
