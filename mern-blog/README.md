@@ -80,3 +80,19 @@
         - import dan panggil registerBg, Input components & register.scss
     10. pengujian pada browser:
         - http://localhost:5000/register
+
+## Components Button
+
+    Todo:
+    1.  components/atoms/Button/index.js
+        - buat functional component Button
+        - pasang dan panggil props title & ...rest
+        - import component/atoms/Button/button.scss
+    2.  components/atoms/Button/button.scss
+        - buat style button
+    3.  components/atoms/index.js
+        import dan panggil button
+    4.  pages/Register/index.js
+        - import dan panggil Button beserta titenya=Register
+    5. pengujian pada browser:
+        - http://localhost:5000/register

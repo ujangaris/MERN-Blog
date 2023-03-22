@@ -1,6 +1,6 @@
 import React from 'react'
 import { RegisterBg } from '../../assets'
-import { Input } from '../../components'
+import { Button, Input } from '../../components'
 import './register.scss'
 
 const Register = () => {
@@ -15,6 +15,7 @@ const Register = () => {
         <Input label='Full Name' placeholder='Full Name' />
         <Input label='Email' placeholder='email' />
         <Input label='Password' placeholder='password' />
+        <Button title='Register' />
       </div>
     </div>
   )
