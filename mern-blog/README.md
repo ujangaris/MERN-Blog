@@ -130,3 +130,25 @@
         - styling register agar form berda ditengah atas & bawah
     6. pengujian pada browser:
         - http://localhost:5000/register
+
+## Konsep SCSS Global & Slicing Halaman Login
+
+    Todo:
+    1.  pages/Login/index.js
+        - copas dari halaman egister kemudian modifikasi
+        -
+    2.  pages/Register/index.js
+        - modifikasi style css agar halaman tidak bisa scrolling
+    3. pengujian pada browser:
+        - http://localhost:5000/register
+        - http://localhost:5000/login
+
+    4.  components/atoms/Button/button.scss
+        - styling css agar cursor jd pointer ketika disorot ke button
+    5.  components/atoms/Link/link.scss
+        - styling css agar cursor jd pointer ketika disorot ke tulisan/teks
+    6. pengujian pada browser:
+        - http://localhost:5000/register
+        - sorot ke button dan text kembali kelogin, cursor akan jd pointer
+        - http://localhost:5000/login
+        - sorot ke button dan text belum punya akun, cursor akan jd pointer
