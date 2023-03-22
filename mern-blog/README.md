@@ -96,3 +96,17 @@
         - import dan panggil Button beserta titenya=Register
     5. pengujian pada browser:
         - http://localhost:5000/register
+
+## Components Gap
+
+    berfungsi untuk memberikan jarak disetiap component yang kita inginkan
+    Todo:
+    1.  components/atoms/Gap/index.js
+        - pasang functional components Gap
+        - pasang dan panggil props {height, width}
+    2.  components/atoms/index.js
+        - import dan panggil Gap
+    3.  pages/Register/index.js
+        - import dan panggil Gap beserta height={20}/ height={50}
+    4. pengujian pada browser:
+        - http://localhost:5000/register
