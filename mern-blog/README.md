@@ -79,7 +79,7 @@
     9.  pages/Register/index
         - import dan panggil registerBg, Input components & register.scss
     10. pengujian pada browser:
-        - http://localhost:5000/register
+        - http://localhost:3000/register
 
 ## Components Button
 
@@ -95,7 +95,7 @@
     4.  pages/Register/index.js
         - import dan panggil Button beserta titenya=Register
     5. pengujian pada browser:
-        - http://localhost:5000/register
+        - http://localhost:3000/register
 
 ## Components Gap
 
@@ -109,7 +109,7 @@
     3.  pages/Register/index.js
         - import dan panggil Gap beserta height={20}/ height={50}
     4. pengujian pada browser:
-        - http://localhost:5000/register
+        - http://localhost:3000/register
 
 ## Components Link
 
@@ -129,7 +129,7 @@
     5.  pages/Register/register.scss
         - styling register agar form berda ditengah atas & bawah
     6. pengujian pada browser:
-        - http://localhost:5000/register
+        - http://localhost:3000/register
 
 ## Konsep SCSS Global & Slicing Halaman Login
 
@@ -140,15 +140,39 @@
     2.  pages/Register/index.js
         - modifikasi style css agar halaman tidak bisa scrolling
     3. pengujian pada browser:
-        - http://localhost:5000/register
-        - http://localhost:5000/login
+        - http://localhost:3000/register
+        - http://localhost:3000/login
 
     4.  components/atoms/Button/button.scss
         - styling css agar cursor jd pointer ketika disorot ke button
     5.  components/atoms/Link/link.scss
         - styling css agar cursor jd pointer ketika disorot ke tulisan/teks
     6. pengujian pada browser:
-        - http://localhost:5000/register
+        - http://localhost:3000/register
         - sorot ke button dan text kembali kelogin, cursor akan jd pointer
-        - http://localhost:5000/login
+        - http://localhost:3000/login
         - sorot ke button dan text belum punya akun, cursor akan jd pointer
+
+## Routing Bertingkat atatu berlapis
+
+    Todo:
+    1.  pages/MainApp/index.js
+        - buat functional component MainApp
+        - pasang Header & footer
+        - import {BrowserRouter as Router, Switch, Route} dari react router dom
+        - import dan pasang Home
+        - import dan pasang CreateBlog
+        - import dan pasang DetailBlog
+    2.  pages/index.js
+        - import & export MainApp
+    3.  config/Routes/index.js
+        - import & pasang MainApp, hapus Home
+    4.  pages/CreateBlog/index.js
+        - buat functional component CreateBlog
+    5.  pages/DetailBlog/index.js
+        - buat functional component DetailBlog
+    6. pengujian pada browser:
+        - http://localhost:3000
+        - http://localhost:3000/create-blog
+        - http://localhost:3000/detail-blog
+        - tiap path akan berbeda isi contennya, namun header dan footer sama
